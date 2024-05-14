@@ -1,0 +1,37 @@
+.board{
+    display: block;
+
+}
+
+.piece{
+    position: absolute;
+    height: 60px;
+    width: 60px;   
+    z-index: 1; 
+}
+
+.boardbg{
+    background-image: url("assets/images/board1.png");
+    width: 480px;
+    height: 480px;
+    transform: translate(60px,60px);
+    z-index: 2;
+}
+
+.move{
+    position: absolute;
+    background-color: brown;
+    width: 60px;
+    height: 60px;
+    z-index: 2 ;
+    opacity: 50%;
+}
+
+.kill{
+    position: absolute;
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    z-index: 2 ;
+    opacity: 50%;
+}
