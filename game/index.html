@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chess</title>
+</head>
+<body>
+    <div class="moveCounter">
+        Move : 0 chance : white
+    </div>
+     <div class="board">
+        <div class="piece bl p a7 1" onclick="move(this)"></div>
+        <div class="piece bl p b7 2" onclick="move(this)"></div>
+        <div class="piece bl p c7 3" onclick="move(this)"></div>
+        <div class="piece bl p d7 4" onclick="move(this)"></div>
+        <div class="piece bl p e7 5" onclick="move(this)"></div>
+        <div class="piece bl p f7 6" onclick="move(this)"></div> 
+        <div class="piece bl p g7 7" onclick="move(this)"></div>
+        <div class="piece bl p h7 8" onclick="move(this)"></div>
+        <div class="piece bl r a8 1" onclick="move(this)"></div>
+        <div class="piece bl n b8 1" onclick="move(this)"></div>
+        <div class="piece bl b c8 1" onclick="move(this)"></div>
+        <div class="piece bl q d8" onclick="move(this)"></div>
+        <div class="piece bl k e8" onclick="move(this)"></div>
+        <div class="piece bl b f8 2" onclick="move(this)"></div>
+        <div class="piece bl n g8 2" onclick="move(this)"></div>
+        <div class="piece bl r h8 2" onclick="move(this)"></div>
+        <div class="piece wh p a2 1" onclick="move(this)"></div>
+        <div class="piece wh p b2 2" onclick="move(this)"></div>
+        <div class="piece wh p c2 3" onclick="move(this)"></div>
+        <div class="piece wh p d2 4" onclick="move(this)"></div>
+        <div class="piece wh p e2 5" onclick="move(this)"></div>
+        <div class="piece wh p f2 6" onclick="move(this)"></div>
+        <div class="piece wh p g2 7" onclick="move(this)"></div>
+        <div class="piece wh p h2 8" onclick="move(this)"></div>
+        <div class="piece wh r a1 1" onclick="move(this)"></div>
+        <div class="piece wh n b1 1" onclick="move(this)"></div>
+        <div class="piece wh b c1 1" onclick="move(this)"></div>
+        <div class="piece wh q d1" onclick="move(this)"></div>
+        <div class="piece wh k e1" onclick="move(this)"></div>
+        <div class="piece wh b f1 2" onclick="move(this)"></div>
+        <div class="piece wh n g1 2" onclick="move(this)"></div>
+        <div class="piece wh r h1 2" onclick="move(this)"></div>
+        <div class="boardbg" onclick="move(this)"></div>
+     </div>    
+     
+     <script src="check.js"></script>
+     <script src="findBlock.js"></script>
+     <script src="resetPieces.js"></script>
+     <script src="setMoves.js"></script>
+     <script src="index.js"></script>
+</body>
+</html>
