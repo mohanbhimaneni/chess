@@ -1,6 +1,6 @@
 let pieces=document.getElementsByClassName("piece");
 let clickedElement=document;
-let masterCount=0;
+let masterCount=1;
 let chance='white';
 let moveCount={
     'whp':{'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},'whk':0,'whq':0,'whr':{'1':0,'2':0},'whn':{'1':0,'2':0},'whb':{'1':0,'2':0},
@@ -77,10 +77,10 @@ async function movePiece(element){
         moveCount['blp'][new1.classList[4]]+=1;
     }
     if (chance=='white') {
-        masterCount+=1;
         chance='black';
         document.getElementsByClassName('moveCounter')[0].innerHTML='Move : '+masterCount+' chance : '+chance;
     } else {
+        masterCount+=1;
         chance='white';
         document.getElementsByClassName('moveCounter')[0].innerHTML='Move : '+masterCount+' chance : '+chance;
     }
